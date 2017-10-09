@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lentele</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<style type="text/css">
+	h1 {
+		font-size: 200%;
+		text-align: center;
+		color: red;
+		animation-name: example;
+		animation-duration: 3s;
+		background-color: yellow;
+	}
+	@keyframes example {
+		from {background-color: red;}
+		to {background-color: yellow;}
+	}
+}
+</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-9"><h1>Inventorius</h1>
+				<table class="table">	
+					<thead>
+						<tr>
+							<th>Prekes kodas</th>
+							<th>Pavadinimas</th>
+							<th>Aprasymas</th>
+							<th>Kaina</th>
+							<th>Kiekis</th>
+							<th>Laikas</th>
+						</tr>
+					</thead>
+					<tbody id="rows">
+					</tbody>
+				</table>
+			</div>
+			<div class="col-md-3">
+				<input class="form-control" type="text" id="pk" placeholder="kodas">
+				<input class="form-control" type="text" id="pavad" placeholder="pavadinimas">
+				<input class="form-control" type="text" id="apr" placeholder="aprasymas">
+				<input class="form-control" type="text" id="kaina" placeholder="kaina">
+				<input class="form-control" type="text" id="kiekis" placeholder="kiekis">
+
+				<button onclick="addToTable()" class="btn btn-success" id="add" >Add</button>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
