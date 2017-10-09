@@ -10,7 +10,7 @@ function calc() {
 	var input_operation = document.getElementById('operation');
 	div_result.innerHTML = ratas + padanga;
 
-	if (arka-1 > ratas+padanga) {
+	if (arka+1 > ratas+padanga) {
 		document.getElementById("result").innerHTML = "Telpa";
 		document.getElementById("result").style.backgroundColor = "green";
 	} else { 
